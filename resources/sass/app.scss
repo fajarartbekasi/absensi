@@ -1,0 +1,33 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.col-md-13{
+  position: relative;
+  width: 50%;
+  min-height:1px;
+}
+
+.card-blue{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #00A3FF;
+  background-clip: border-box;
+}
+.fs-2{
+      font-size: 1.5rem !important;
+}
