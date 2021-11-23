@@ -26,3 +26,6 @@ Route group master data
 Route::group(['prefix'=>'master-data'], function(){
     route::get('siswa','SiswaController@index')->name('master-data.siswa');
 });
+
+Route::get('login/github', 'GithubController@redirectToProvider');
+Route::get('login/github/callback', 'GithubController@handleProviderCallback');
