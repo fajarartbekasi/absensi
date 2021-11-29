@@ -14,7 +14,7 @@
                     <a href="" class="nav-link">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Manage User</a>
+                    <a href="{{route('manage.user')}}" class="nav-link">Manage User</a>
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link">Manage Lessons</a>

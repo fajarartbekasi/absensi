@@ -29,3 +29,12 @@ Route::group(['prefix'=>'master-data'], function(){
 
 Route::get('login/github', 'GithubController@redirectToProvider');
 Route::get('login/github/callback', 'GithubController@handleProviderCallback');
+
+/**
+ * route group untuk master user
+ * siswa,admin,guru
+ */
+Route::group(['prefix' => 'manage'], function(){
+    route::get('/user','Manage\UserController@index')->name('manage.user');
+    route::get('/add/form/invite','Manage\UserController@create')->name('manage.add.form.invite');
+});
