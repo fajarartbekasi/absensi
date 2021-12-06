@@ -1,0 +1,25 @@
+1. menambahkan package baru laravel/socialite
+2. membuat crendentcial untuk konfigurasi ke vendor (Google,Facebook,Twitter,Github dll)
+3. Konfigurasi crendentcial ke aplikasi
+4. mendaftarkan route baru
+    - pemanggilan provider
+    - callback dari provider ke aplikasi (Authentication atau Authorize)
+
+array
+encryption
+
+    array[
+        'john doe','john@mail.com','dsadasdasdasd1231231','dsasdasdasd'
+    ]
+
+    @forelse($users as $user)
+        {{$user->name}} => john doe
+        {{$user->email}} => john@mail.com
+    @empty
+        Maaf data tidak tersedia
+    @endforelse
+
+    User name Email
+    john doe  john@mail.com
+
+php artisan make:controller Manage/UserController

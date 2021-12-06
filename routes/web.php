@@ -37,4 +37,9 @@ Route::get('login/github/callback', 'GithubController@handleProviderCallback');
 Route::group(['prefix' => 'manage'], function(){
     route::get('/user','Manage\UserController@index')->name('manage.user');
     route::get('/add/form/invite','Manage\UserController@create')->name('manage.add.form.invite');
+    route::get('/add/form/lesson','Manage\LessonController@create')->name('manage.add.form.lesson');
+    route::get('/add/form/class','Manage\ClassController@create')->name('manage.add.form.class');
+    route::get('/lessons','Manage\LessonController@index')->name('manage.lessons');
+
+    route::get('/class','Manage\ClassController@index')->name('manage.class');
 });

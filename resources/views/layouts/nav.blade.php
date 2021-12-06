@@ -17,10 +17,10 @@
                     <a href="{{route('manage.user')}}" class="nav-link">Manage User</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Manage Lessons</a>
+                    <a href="{{route('manage.lessons')}}" class="nav-link">Manage Lessons</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Manage Class</a>
+                    <a href="{{route('manage.class')}}" class="nav-link">Manage Class</a>
                 </li>
             </ul>
 

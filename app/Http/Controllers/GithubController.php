@@ -40,7 +40,7 @@ class GithubController extends Controller
             'email' => $githubUser->email,
             'github_id' => $githubUser->id,
             'avatar' => $githubUser->avatar,
-            'password' => encrypt('12345dummy'),
+            'password' => encrypt('1'),
         ]);
     }
 }
