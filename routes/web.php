@@ -52,6 +52,7 @@ Route::group(['prefix' => 'store'], function(){
 
 Route::group(['prefix' => 'edit'], function () {
     route::get('lesson/{lesson}', 'Manage\LessonController@edit')->name('edit.lesson');
+    route::get('class/{clas}', 'Manage\ClassController@edit')->name('edit.class');
 });
 
 Route::group(['prefix' => 'update'], function () {

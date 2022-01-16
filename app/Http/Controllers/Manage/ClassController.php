@@ -35,4 +35,10 @@ class ClassController extends Controller
 
         return redirect()->back();
     }
+    public function edit($id)
+    {
+        $clas = Clas::findOrFail($id);
+
+        return view('manage.class.edit', compact('clas'));
+    }
 }

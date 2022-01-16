@@ -34,7 +34,7 @@
                                             <form action="" method="post">
                                                 @csrf
                                                 @method('DELETE')
-                                                <a href="http://" class="btn btn-outline-info btn-sm">Edit Kelas</a>
+                                                <a href="{{route('edit.class', $clas->id)}}" class="btn btn-outline-info btn-sm">Edit Kelas</a>
                                                 <button type="submit" class="btn btn-outline-danger btn-sm">Hapus Kelas</button>
                                             </form>
                                         </td>
