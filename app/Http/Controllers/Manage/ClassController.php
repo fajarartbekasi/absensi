@@ -10,7 +10,8 @@ class ClassController extends Controller
 {
     public function index()
     {
-        return view('manage.class.index');
+        $class = Clas::latest()->paginate(6);
+        return view('manage.class.index', compact('class'));
     }
     public function create()
     {
