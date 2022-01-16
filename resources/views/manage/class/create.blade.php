@@ -7,41 +7,47 @@
             <div class="card border-0 shadow-sm">
                 <div class="card-header shadow-sm bg-white">
                     <h4 class="text-secondary">
-                        Enter the information to add a new class, enter the data correctly
+                        Masukan informasi kelas dibawah ini dengan benar
                     </h4>
                 </div>
                 <div class="card-body">
-                    <form action="" method="post">
+                    <form action="{{route('store.class')}}" method="post">
                         @csrf
                         <div class="row">
 
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">Kelas</label>
-                                    <select name="" id="" class="form-control">
+                                    <select name="name" id="" class="form-control">
                                         <option value="">Pilih Nama Kelas</option>
+                                        <option value="X">X</option>
+                                        <option value="XI">XI</option>
+                                        <option value="XII">XII</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">Walikelas</label>
-                                    <select name="" id="" class="form-control">
+                                    <select name="walas" id="" class="form-control">
                                         <option value="">Pilih Walikelas</option>
+                                        <option value="John Doe">John Doe</option>
+                                        <option value="Adam wathan">Adam Wathan</option>
+                                        <option value="Taylor Otwel">Taylor Otwel</option>
+                                        <option value="Munaroh">Munaroh</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">Jurusan</label>
-                                    <input type="text" name="name" id="" class="form-control"
-                                        placeholder="Nama Pelajaran">
+                                    <input type="text" name="jurusan" id="" class="form-control" placeholder="Jurusan">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="">Jumlah siswa</label>
-                                    <input type="text" name="phone" id="" class="form-control" placeholder="Jumlah Siswa">
+                                    <input type="text" name="jumlah" id="" class="form-control" placeholder="Jumlah Siswa">
                                 </div>
                             </div>
                             <div class="mt-2 ml-3">

@@ -47,6 +47,7 @@ Route::group(['prefix' => 'manage'], function(){
 
 Route::group(['prefix' => 'store'], function(){
     route::post('lesson','Manage\LessonController@store')->name('store.lesson');
+    route::post('class','Manage\ClassController@store')->name('store.class');
 });
 
 Route::group(['prefix' => 'edit'], function () {
