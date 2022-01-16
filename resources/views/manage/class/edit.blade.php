@@ -11,8 +11,9 @@
                     </h4>
                 </div>
                 <div class="card-body">
-                    <form action="{{route('store.class')}}" method="post">
+                    <form action="{{route('update.class', $clas->id)}}" method="post">
                         @csrf
+                        @method('PATCH')
                         <div class="row">
 
                             <div class="col-md-6">

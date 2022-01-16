@@ -57,6 +57,7 @@ Route::group(['prefix' => 'edit'], function () {
 
 Route::group(['prefix' => 'update'], function () {
     route::patch('lesson/{lesson}', 'Manage\LessonController@update')->name('update.lesson');
+    route::patch('class/{clas}', 'Manage\ClassController@update')->name('update.class');
 });
 
 Route::group(['prefix' => 'destroy'], function () {

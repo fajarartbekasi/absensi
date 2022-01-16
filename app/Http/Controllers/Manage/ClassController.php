@@ -41,4 +41,12 @@ class ClassController extends Controller
 
         return view('manage.class.edit', compact('clas'));
     }
+    public function update(Request $request, $id)
+    {
+        $clas = Clas::findOrFail($id);
+
+        $clas->update($request->all());
+
+        return redirect()->back();
+    }
 }
