@@ -49,4 +49,12 @@ class ClassController extends Controller
 
         return redirect()->back();
     }
+    public function destroy(Request $request, $id)
+    {
+        $clas = Clas::findOrFail($id);
+
+        $clas->delete($request->all());
+
+        return redirect()->back();
+    }
 }

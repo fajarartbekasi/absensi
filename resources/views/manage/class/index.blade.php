@@ -31,7 +31,7 @@
                                         <td>{{$clas->jurusan}}</td>
                                         <td>{{$clas->jumlah}}</td>
                                         <td>
-                                            <form action="" method="post">
+                                            <form action="{{route('destroy.class', $clas->id)}}" method="post">
                                                 @csrf
                                                 @method('DELETE')
                                                 <a href="{{route('edit.class', $clas->id)}}" class="btn btn-outline-info btn-sm">Edit Kelas</a>
