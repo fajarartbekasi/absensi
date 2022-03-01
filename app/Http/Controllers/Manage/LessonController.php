@@ -9,6 +9,7 @@ use Illuminate\Foundation\Console\Presets\React;
 
 class LessonController extends Controller
 {
+
     public function index()
     {
         $lessons = Lesson::latest()->paginate(6);

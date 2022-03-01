@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-light navbar-laravel mb-4">
+<nav class="navbar navbar-expand-md navbar-light navbar-laravel shadow ">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand text-white" href="{{ url('/') }}">
             {{ config('app.name', 'Laravel') }}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -11,16 +11,16 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="" class="nav-link">Dashboard</a>
+                    <a href="" class="nav-link text-white">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('manage.user')}}" class="nav-link">Manage User</a>
+                    <a href="{{route('manage.user')}}" class="nav-link text-white">Manage User</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('manage.lessons')}}" class="nav-link">Manage Lessons</a>
+                    <a href="{{route('manage.lessons')}}" class="nav-link text-white">Manage Lessons</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('manage.class')}}" class="nav-link">Manage Class</a>
+                    <a href="{{route('manage.class')}}" class="nav-link text-white">Manage Class</a>
                 </li>
             </ul>
 
@@ -29,16 +29,16 @@
                 <!-- Authentication Links -->
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a class="nav-link text-white" href="{{ route('login') }}">{{ __('Login') }}</a>
                     </li>
                     @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="nav-link text-white" href="{{ route('register') }}">{{ __('Register') }}</a>
                         </li>
                     @endif
                 @else
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 

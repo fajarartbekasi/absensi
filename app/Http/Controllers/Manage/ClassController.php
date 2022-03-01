@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 
 class ClassController extends Controller
 {
+
     public function index()
     {
         $class = Clas::latest()->paginate(6);
